@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>core web vitals</title>
+    <meta name="description" content="A simple HTML document to demonstrate core web vitals.">
+</head>
+<body>
+    <h1>Core Web Vitals Example</h1>
+    <p>This is a simple HTML document to demonstrate core web vitals.</p>
+    
+    <script>
+        // Example of measuring core web vitals
+        if ('getCLS' in window && 'getFID' in window && 'getLCP' in window) {
+            const { getCLS, getFID, getLCP } = window;
+            getCLS(console.log);
+            getFID(console.log);
+            getLCP(console.log);
+        }
+    </script>
+    
+</body>
+</html>
